@@ -140,6 +140,9 @@ p{
 
 }
 
+.p1Fighting{
+    
+}
 .healthBarP1{
 
 }
@@ -213,6 +216,21 @@ p{
     transform: translateY(4px);
   }
 
+
+  #imageP1 img{
+    width: 25em;
+    height: 30em;
+    margin-top: 4em;
+    margin-bottom: 4em;
+}
+
+
+#imageP2 img{
+    width: 25em;
+    height: 30em;
+    margin-top: 4em;
+    margin-bottom: 4em;
+}
 
 #winnerText{
     background-color: orange;
