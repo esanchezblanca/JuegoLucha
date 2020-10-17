@@ -12,29 +12,29 @@
 <body>
 
 
-    <div class="mainScreen">
+    <div id="mainScreen">
         <div class="selector">
             <div onclick="characterSelect('Character1')" class="fighter" id="fighter1">
                 <img src="img/CharacterP1/rick.png" alt="Rick">
                 <p>Rick</p>
             </div>
-            <div onclick="characterSelect('Character1')" class="fighter" id="fighter1">
+            <div onclick="characterSelect('Character2')" class="fighter" id="fighter1">
                 <img src="img/CharacterP1/terry.png" alt="Terry">
                 <p>Scary Terry</p>
             </div>
-            <div onclick="characterSelect('Character1')" class="fighter" id="fighter1">
+            <div onclick="characterSelect('Character3')" class="fighter" id="fighter1">
                 <img src="img/CharacterP1/showMe.png" alt="Cromulon">
                 <p>Cromulon</p>
             </div>
-            <div onclick="characterSelect('Character1')" class="fighter" id="fighter1">
-                <img src="img/CharacterP1/dumbRick.png" alt="Dumb Rick">
-                <p>Dumb Rick</p>
+            <div onclick="characterSelect('Character4')" class="fighter" id="fighter1">
+                <img src="img/CharacterP1/dumbRick.png" alt="Doofus Rick">
+                <p>Doofus Rick</p>
             </div>
-            <div onclick="characterSelect('Character1')" class="fighter" id="fighter1">
+            <div onclick="characterSelect('Character5')" class="fighter" id="fighter1">
                 <img src="img/CharacterP1/alienSimulation.png" alt="Prince Nebulon">
                 <p>Prince Nebulon</p>
             </div>
-            <div onclick="characterSelect('Character1')" class="fighter" id="fighter1">
+            <div onclick="characterSelect('Character6')" class="fighter" id="fighter1">
                 <img src="img/CharacterP1/timeCop.png" alt="Time Cop">
                 <p>Time Cop</p>
             </div>
@@ -47,19 +47,36 @@
 
 
          <div class="vsPlayers">
-            <div>
-                <img class="p1vs" src="img/CharacterP1/dumbRick.png" alt="player1">
+            <div id="p1vs"></div>
+            <div class="vsTextDiv">
+                <p class="vsText">VS</p>
+                <button onclick="startGameClick()" class="startGameBtn">START</button>
             </div>
-            <div class="vsText">VS
-                <button class="startGameBtn">START</button>
-            </div>
-            <div>
-                <img class="p2vs" src="img/CharacterP2/timeCopP2.png" alt="player2">
-            </div>
+            <div id="p2vs"></div>
          </div>
     
     </div>
 
+    <div id="fightScreen">
+        
+        <div class="p1Fighting">
+            <progress value="100" class="healthBarP1"></progress>
+            <div id="imageP1"></div>
+            <button class="fightP1Btn">FIGHT!</button>
+        </div>
+        <div class="versus">VS</div>
+
+        <div class="p2Fighting">
+            <progress value="100" class="healthBarP2"></progress>
+            <div id="imageP2"></div>
+            <button class="fightP2Btn">FIGHT!</button>
+        </div>
+
+
+        <div id="winnerText">The Winner is...</div>
+    </div>
+
+    
 
     <script src="js/main.js"></script>
 </body>
