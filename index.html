@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,42 +8,60 @@
 
     <link rel="stylesheet" href="css/estilos.css">
 </head>
+
 <body>
+
+
+    <div class="mainScreen">
+        <div class="selector">
+            <div onclick="characterSelect('Character1')" class="fighter" id="fighter1">
+                <img src="img/CharacterP1/rick.png" alt="Rick">
+                <p>Rick</p>
+            </div>
+            <div onclick="characterSelect('Character1')" class="fighter" id="fighter1">
+                <img src="img/CharacterP1/terry.png" alt="Terry">
+                <p>Scary Terry</p>
+            </div>
+            <div onclick="characterSelect('Character1')" class="fighter" id="fighter1">
+                <img src="img/CharacterP1/showMe.png" alt="Cromulon">
+                <p>Cromulon</p>
+            </div>
+            <div onclick="characterSelect('Character1')" class="fighter" id="fighter1">
+                <img src="img/CharacterP1/dumbRick.png" alt="Dumb Rick">
+                <p>Dumb Rick</p>
+            </div>
+            <div onclick="characterSelect('Character1')" class="fighter" id="fighter1">
+                <img src="img/CharacterP1/alienSimulation.png" alt="Prince Nebulon">
+                <p>Prince Nebulon</p>
+            </div>
+            <div onclick="characterSelect('Character1')" class="fighter" id="fighter1">
+                <img src="img/CharacterP1/timeCop.png" alt="Time Cop">
+                <p>Time Cop</p>
+            </div>
+        </div>
+
     
+         <div class="selectPlayer">
+            <h1 class="selectPlayerText">Select player</h1>
+         </div>
 
-    <div class="selector">
-        <div onclick="characterSelect('Character1')" class="fighter" id="fighter1">
-            <img src="img/CharacterP1/rick.png" alt="Rick">
-            <p>Rick</p>
-        </div>
-        <div onclick="characterSelect('Character1')" class="fighter" id="fighter1">
-            <img src="img/CharacterP1/terry.png" alt="Terry">
-            <p>Scary Terry</p>
-        </div>
-        <div onclick="characterSelect('Character1')" class="fighter" id="fighter1">
-            <img src="img/CharacterP1/showMe.png" alt="Cromulon">
-            <p>Cromulon</p>
-        </div>
-        <div onclick="characterSelect('Character1')" class="fighter" id="fighter1">
-            <img src="img/CharacterP1/dumbRick.png" alt="Dumb Rick">
-            <p>Dumb Rick</p>
-        </div>
-        <div onclick="characterSelect('Character1')" class="fighter" id="fighter1">
-            <img src="img/CharacterP1/alienSimulation.png" alt="Prince Nebulon">
-            <p>Prince Nebulon</p>
-        </div>
-        <div onclick="characterSelect('Character1')" class="fighter" id="fighter1">
-            <img src="img/CharacterP1/timeCop.png" alt="Time Cop">
-            <p>Time Cop</p>
-        </div>
-        
-        <div>
-            <h1>Select player</h1>
-        </div>
 
+         <div class="vsPlayers">
+            <div>
+                <img class="p1vs" src="img/CharacterP1/dumbRick.png" alt="player1">
+            </div>
+            <div class="vsText">VS
+                <button class="startGameBtn">START</button>
+            </div>
+            <div>
+                <img class="p2vs" src="img/CharacterP2/timeCopP2.png" alt="player2">
+            </div>
+         </div>
+    
     </div>
 
 
     <script src="js/main.js"></script>
 </body>
+
 </html>
