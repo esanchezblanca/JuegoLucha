@@ -3,6 +3,8 @@ let arrCharacter = [];
 let mainScreenDiv = document.getElementById('mainScreen');
 let fightScreenDiv = document.getElementById('fightScreen');
 let winnerDiv = document.getElementById('winnerText');
+let healthBar1 = document.getElementById('healthBarP1');
+let healthBar2 = document.getElementById('healthBarP2');
 
 class Character {
     constructor(name, attack, defense, life, speed, quote, picture) {
@@ -81,5 +83,16 @@ function startGameClick() {
         mainScreenDiv.style.visibility = 'hidden';
         fightScreenDiv.style.visibility = 'visible';
         startFight();
+    }
+}
+
+function attack (fighter) {
+    if (fighter == 0){
+        healthBar2.value -=  arrCharacter[1].attack - arrCharacter[0].defense;
+        console.log('esto es la vida 2 '+healthBar2.value)
+        console.log(arrCharacter[1].attack - arrCharacter[0].defense)
+    }else{
+        healthBar1.value -= arrCharacter[0].attack - arrCharacter[1].defense;
+        console.log(arrCharacter[0].attack - arrCharacter[1].defense)
     }
 }

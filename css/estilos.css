@@ -140,17 +140,6 @@ p{
 
 }
 
-.p1Fighting{
-    
-}
-.healthBarP1{
-
-}
-
-#imageP1{
-
-}
-
 .fightP1Btn{
     display: flex;
     margin-bottom: 2em;
@@ -184,14 +173,6 @@ p{
     margin-right: 2em;
 }
 
-.healthBarP2{
-
-}
-
-#imageP2{
-
-}
-
 .fightP2Btn{
     display: flex;
     margin-bottom: 2em;
@@ -217,12 +198,12 @@ p{
   }
 
 
-.healthBarP1{
+#healthBarP1{
     margin-top: 2em;
     margin-left: 8em;
 }
 
-.healthBarP2{
+#healthBarP2{
     margin-top: 2em;
     margin-left: 8em;
 }
@@ -233,7 +214,6 @@ p{
     margin-top: 4em;
     margin-bottom: 4em;
 }
-
 
 #imageP2 img{
     width: 25em;
