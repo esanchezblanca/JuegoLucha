@@ -217,6 +217,16 @@ p{
   }
 
 
+.healthBarP1{
+    margin-top: 2em;
+    margin-left: 8em;
+}
+
+.healthBarP2{
+    margin-top: 2em;
+    margin-left: 8em;
+}
+
   #imageP1 img{
     width: 25em;
     height: 30em;
@@ -230,6 +240,14 @@ p{
     height: 30em;
     margin-top: 4em;
     margin-bottom: 4em;
+}
+
+.fightP1Btn{
+    margin-left: 5em;
+}
+
+.fightP2Btn{
+    margin-left: 5em;
 }
 
 #winnerText{
