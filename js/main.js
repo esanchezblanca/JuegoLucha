@@ -5,6 +5,7 @@ let fightScreenDiv = document.getElementById('fightScreen');
 let winnerDiv = document.getElementById('winnerText');
 let healthBar1 = document.getElementById('healthBarP1');
 let healthBar2 = document.getElementById('healthBarP2');
+let winnerText = document.getElementById('theWinnerIs');
 
 class Character {
     constructor(name, attack, defense, life, speed, quote, picture) {
@@ -88,11 +89,26 @@ function startGameClick() {
 
 function attack (fighter) {
     if (fighter == 0){
+        if ((healthBar2.value + arrCharacter[0].defense) - arrCharacter[1].attack >= 0){
         healthBar2.value -=  arrCharacter[1].attack - arrCharacter[0].defense;
-        console.log('esto es la vida 2 '+healthBar2.value)
-        console.log(arrCharacter[1].attack - arrCharacter[0].defense)
+        } else{
+            healthBar2.value = 0;
+            finish (0);
+        }
     }else{
-        healthBar1.value -= arrCharacter[0].attack - arrCharacter[1].defense;
-        console.log(arrCharacter[0].attack - arrCharacter[1].defense)
+        if ((healthBar1.value + arrCharacter[1].defense) - arrCharacter[0].attack >= 0){
+            healthBar1.value -= arrCharacter[0].attack - arrCharacter[1].defense;
+        } else{
+            healthBar2.value = 0;
+             finish (1);
+        }
     }
 }
+
+function finish (winner){
+    fightScreenDiv.style.visibility = 'hidden';
+    winnerDiv.style.visibility = 'visible';
+    winnerText.textContent += arrCharacter[winner].quote;
+}
+
+
