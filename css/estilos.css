@@ -1,5 +1,5 @@
 body{
-    background: url(/img/BackgroundGreenSpace.png);
+    background: url(../img/BackgroundGreenSpace.png);
     background-repeat: no-repeat;
     background-size: 100% 100%;
     background-attachment: fixed;
@@ -33,7 +33,7 @@ body{
 .selectPlayerText{
     font-family: get_schwifty;
     local("get_schwifty");
-    src: url('./fonts/get_schwifty.ttf');
+    src: url('/fonts/get_schwifty.ttf');
     text-align: center;
     font-size: 55px;
     margin-top: 2em;
