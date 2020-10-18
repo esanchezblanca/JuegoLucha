@@ -231,5 +231,14 @@ p{
 }
 
 #winnerText{
-    background-color: orange;
+
+}
+
+#theWinnerIs{
+
+    margin-top: -10% ;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    font-size: 60px;
 }
