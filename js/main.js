@@ -58,11 +58,11 @@ function printCharacter(character) {
     if (arrCharacter.length < 2) {
         if (arrCharacter.length == 1) {
             var img = document.createElement('img');
-            img.src = '/img/CharacterP2/' + character;
+            img.src = './img/CharacterP2/' + character;
             document.getElementById('p2vs').appendChild(img)
         } else {
             var img = document.createElement('img');
-            img.src = '/img/CharacterP1/' + character;
+            img.src = './img/CharacterP1/' + character;
             document.getElementById('p1vs').appendChild(img)
 
         }
@@ -71,11 +71,11 @@ function printCharacter(character) {
 
 function startFight (){
     var img = document.createElement('img');
-    img.src = '/img/CharacterP1/' + arrCharacter[0].picture;
+    img.src = './img/CharacterP1/' + arrCharacter[0].picture;
     document.getElementById('imageP1').appendChild(img)
 
     var img2 = document.createElement('img');
-    img2.src = '/img/CharacterP2/' + arrCharacter[1].picture;
+    img2.src = './img/CharacterP2/' + arrCharacter[1].picture;
     document.getElementById('imageP2').appendChild(img2)
 }
 
