@@ -58,7 +58,7 @@ body{
 @font-face {
     font-family: get_schwifty;
     local("get_schwifty");
-    src: url('/fonts/get_schwifty.ttf');
+    src: url('../fonts/get_schwifty.ttf');
     
   }
 
