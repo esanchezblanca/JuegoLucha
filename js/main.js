@@ -75,7 +75,7 @@ function startFight (){
     document.getElementById('imageP1').appendChild(img)
 
     var img2 = document.createElement('img');
-    img2.src = './img/CharacterP2/' + arrCharacter[1].picture;
+    img2.src = '. /img/CharacterP2/' + arrCharacter[1].picture;
     document.getElementById('imageP2').appendChild(img2)
 }
 
